@@ -1,0 +1,156 @@
+html,body{
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.landing{
+    height: calc(270vh);
+    background: url(../assets/SVG/bg3.svg);
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+
+.leftText{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.text{
+    width: 50%;
+    color: var(--other-col);
+    display: grid;
+    align-items: center;
+    place-items: center;
+}
+
+.headline{
+    padding-bottom: 20px;
+}
+
+.headline h2 {
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8; 
+}
+
+.subText{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.heroImage{
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    transform: translateX(-5%);
+    transform: translateY(-10%);
+    z-index: 2;
+    width: 30%;
+}
+
+.secondPart{
+    padding-top: 13vw;
+}
+
+.secondTitles{
+    color: var(--base-col);
+}
+
+.theWhyCards{
+    width: 70vw;
+    padding-left: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: #e4b8b7c2;
+    color: var(--base-col);
+    border-radius: 7px;
+    max-width: 600px;
+    flex: 1 0 300px;
+    font-size: 1rem;
+    transition: transform 200ms ease-in-out ;
+
+}
+
+.card:hover{
+    transform: translateY(-1rem);
+}
+
+.card_title{
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    padding: 0.75rem 0.75rem 0 0.75rem; 
+}
+
+.card_snippet{
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+}
+
+.card_snippet span{
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+.thirdPart{
+    padding-top: 10vw;
+}
+
+.card.reasonCard{
+    max-width: 400px;
+}
+
+.divider{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.2);
+    margin-top: 2rem;
+}
+
+.reason{
+    display: flex;
+}
+
+.reasonText{
+    font-size: 1.2rem;
+    text-align: left;
+    margin-left: 1rem ;
+}
+
+.reason img{
+    align-self: flex-start;
+    height: 1.1em;
+    width: 1.1em;
+    margin-top: 0.3rem;
+}
+
+.footer{
+    position: absolute;
+    bottom: 20px;
+}
+
+.card.footerCard{
+    max-width: 600px;
+    font-size: 1.1rem;
+}
